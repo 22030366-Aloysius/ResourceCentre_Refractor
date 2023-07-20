@@ -62,10 +62,10 @@ public class ResourceCentre {
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
-				if (itemType == 1) {
+				if (itemType == ITEM_TYPE_CAMCORDER) {
 					// Loan camcorder
 					ResourceCentre.loanCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == ITEM_TYPE_CHROMEBOOK) {
 					// Loan Chromebook
 					ResourceCentre.loanChromebook(chromebookList);
 				} else {
@@ -78,10 +78,10 @@ public class ResourceCentre {
 				itemTypeMenu();
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
-				if (itemType == 1) {
+				if (itemType == ITEM_TYPE_CAMCORDER) {
 					// Return camcorder
 					ResourceCentre.returnCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == ITEM_TYPE_CHROMEBOOK) {
 					// Return Chromebook
 					ResourceCentre.returnChromebook(chromebookList);
 				} else {
